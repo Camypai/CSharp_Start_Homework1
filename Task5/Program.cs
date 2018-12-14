@@ -7,6 +7,12 @@ using static HomeworkLibrary.Helpers;
 
 namespace Task5
 {
+    /// <summary>
+    /// Написать программу, которая выводит на экран ваше имя, фамилию и город проживания
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     class Program
     {
         static void Main(string[] args)
@@ -16,8 +22,12 @@ namespace Task5
             var city = Question("Введите ваш город проживания");
 
             Print($"Имя: {firstname}; Фамилия: {lastname}; Город: {city}");
+
+            // Сделать задание, только вывод организуйте в центре экрана
             Console.SetCursorPosition(25, 13);
             Print($"Имя: {firstname}; Фамилия: {lastname}; Город: {city}");
+
+            // Сделать задание б с использованием собственных методов 
             Print($"Имя: {firstname}; Фамилия: {lastname}; Город: {city}", 25, 13);
 
             Pause();

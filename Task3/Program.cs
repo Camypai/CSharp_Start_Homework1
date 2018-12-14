@@ -3,6 +3,13 @@ using static HomeworkLibrary.Helpers;
 
 namespace Task3
 {
+    /// <summary>
+    /// Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2 по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2).
+    /// Вывести результат, используя спецификатор формата .2f (с двумя знаками после запятой);
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     class Program
     {
         static void Main(string[] args)
@@ -13,6 +20,8 @@ namespace Task3
             var y2 = double.Parse(Question("Введите координату у для второй точки"));
 
             var r = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+
+            // Выполните предыдущее задание, оформив вычисления расстояния между точками в виде метода
             var r2 = DistanceBetweenPoints(x1, y1, x2, y2);
 
             Print($"Расстояние между двумя введёнными точками равняется {r:f2}");

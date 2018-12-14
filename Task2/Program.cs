@@ -2,6 +2,12 @@
 
 namespace Task2
 {
+    /// <summary>
+    /// Ввести вес и рост человека. Рассчитать и вывести индекс массы тела (ИМТ) по формуле I=m/(h*h); где m — масса тела в килограммах, h — рост в метрах
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     class Program
     {
         static void Main(string[] args)

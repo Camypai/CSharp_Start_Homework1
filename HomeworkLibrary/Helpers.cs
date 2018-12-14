@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace HomeworkLibrary
 {
+    /// <summary>
+    /// Создать класс с методами, которые могут пригодиться в вашей учебе 
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     public class Helpers
     {
         public static void Print(string message)
@@ -24,11 +30,6 @@ namespace HomeworkLibrary
             Console.Write($"{question}: ");
             return Console.ReadLine();
         }
-
-        //        public static void Pause()
-        //        {
-        //            Console.ReadKey();
-        //        }
 
         public static void Pause(string message = "Для завершения программы нажмите любую клавишу...")
         {
