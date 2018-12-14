@@ -31,7 +31,7 @@ namespace HomeworkLibrary
             return Console.ReadLine();
         }
 
-        public static void Pause(string message = "Для завершения программы нажмите любую клавишу...")
+        public static void Pause(string message = "Для завершения программы нажмите любую клавишу...") 
         {
             Console.Write(message);
             Console.ReadKey();
