@@ -3,6 +3,17 @@ using HomeworkLibrary;
 
 namespace Homework2
 {
+    
+    /// <summary>
+    /// Реализовать метод проверки логина и пароля. На вход метода подается логин и пароль. 
+    /// На выходе истина, если прошел авторизацию, и ложь, если не прошел (Логин: root, Password: GeekBrains). 
+    /// Используя метод проверки логина и пароля, написать программу: пользователь вводит логин и пароль, 
+    /// программа пропускает его дальше или не пропускает. 
+    /// С помощью цикла do while ограничить ввод пароля тремя попытками 
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     public static class Task4
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem

@@ -3,6 +3,13 @@ using HomeworkLibrary;
 
 namespace Homework2
 {
+    
+    /// <summary>
+    /// С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел 
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     public static class Task3
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem

@@ -3,6 +3,15 @@ using HomeworkLibrary;
 
 namespace Homework2
 {
+    
+    /// <summary>
+    /// *Написать программу подсчета количества «хороших» чисел в диапазоне от 1 до 1 000 000 000. 
+    /// «Хорошим» называется число, которое делится на сумму своих цифр. 
+    /// Реализовать подсчёт времени выполнения программы, используя структуру DateTime
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     public static class Task6
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem

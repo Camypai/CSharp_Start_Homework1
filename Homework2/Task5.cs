@@ -3,7 +3,16 @@ using HomeworkLibrary;
 
 namespace Homework2
 {
-    public class Task5
+    
+    /// <summary>
+    /// а) Написать программу, которая запрашивает массу и рост человека, 
+    /// вычисляет его индекс массы и сообщает, нужно ли человеку похудеть, набрать вес или всё в норме.
+    /// б) *Рассчитать, на сколько кг похудеть или сколько кг набрать для нормализации веса. 
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
+    public static class Task5
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem
         {

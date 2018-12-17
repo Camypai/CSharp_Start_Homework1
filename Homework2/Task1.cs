@@ -1,9 +1,14 @@
 ﻿using System;
-using System.Runtime.InteropServices.ComTypes;
 using HomeworkLibrary;
 
 namespace Homework2
 {
+    /// <summary>
+    /// Написать метод, возвращающий минимальное из трех чисел 
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     public static class Task1
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem

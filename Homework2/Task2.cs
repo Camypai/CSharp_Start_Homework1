@@ -3,6 +3,13 @@ using HomeworkLibrary;
 
 namespace Homework2
 {
+    
+    /// <summary>
+    /// Написать метод подсчета количества цифр числа 
+    /// </summary>
+    /// <author>
+    /// Горшков Илья
+    /// </author>
     public static class Task2
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem

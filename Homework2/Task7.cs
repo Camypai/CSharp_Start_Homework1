@@ -3,7 +3,15 @@ using HomeworkLibrary;
 
 namespace Homework2
 {
-    public class Task7
+    
+    // <summary>
+    // a) Разработать рекурсивный метод, который выводит на экран числа от a до b(a < b).
+    // б) *Разработать рекурсивный метод, который считает сумму чисел от a до b.
+    // </summary>
+    // <author>
+    // Горшков Илья
+    // </author>
+    public static class Task7
     {
         public static readonly Helpers.MenuItem MenuItem = new Helpers.MenuItem
         {
