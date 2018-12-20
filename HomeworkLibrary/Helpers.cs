@@ -14,9 +14,15 @@ namespace HomeworkLibrary
     /// </author>
     public class Helpers
     {
-        public static void Print(string message)
+        public static void Print(string message = "", bool inLine = false)
         {
-            Console.WriteLine(message);
+            if (!inLine)
+            {
+                Console.WriteLine(message);
+                return;
+            }
+
+            Console.Write(message);
         }
 
         public static void Print(string message, int left, int top)
@@ -35,6 +41,48 @@ namespace HomeworkLibrary
         {
             Console.Write(message);
             Console.ReadKey();
+        }
+
+        public static void Menu(IEnumerable<MenuItem> menuPoints)
+        {
+            do
+            {
+                Console.Clear();
+                
+                Print(@"Введите цифру, соответствующую заданию.
+Для выхода из программы нажмите ""q""");
+                foreach (var menuPoint in menuPoints)
+                {
+                    Console.WriteLine(menuPoint.Title);
+                }
+
+                Print("Номер задания: ", true);
+                var input = Console.ReadKey();
+                if (menuPoints.Any(q => q.Id.Any(k => k == input.Key)))
+                {   
+                    var item = menuPoints.FirstOrDefault(q => q.Id.Any(k => k == input.Key));
+                    Print();
+                    Print(item.Description);
+                    item.ItemMethod();
+                    continue;
+                }
+
+                if (input.Key == ConsoleKey.Q)
+                {
+                    break;
+                }
+                
+            } while (true);
+        }
+
+        public class MenuItem
+        {
+            public IEnumerable<ConsoleKey> Id { get; set; }
+            public string Title { get; set; }
+            public string Description { get; set; }
+            public Method ItemMethod { get; set; }
+
+            public delegate void Method();
         }
     }
 }
