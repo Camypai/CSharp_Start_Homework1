@@ -16,7 +16,7 @@ namespace Homework8
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Task4());
+            Application.Run(new MenuForm());
         }
     }
 }

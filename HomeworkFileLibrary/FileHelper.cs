@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace HomeworkFileLibrary
@@ -26,7 +27,7 @@ namespace HomeworkFileLibrary
         {
             try
             {
-                using (var sr = new StreamReader(path, Encoding.Default))
+                using (var sr = new StreamReader(path, Encoding.UTF8))
                 {
                     return sr.ReadToEnd();
                 }
@@ -35,6 +36,33 @@ namespace HomeworkFileLibrary
             {
                 return null;
             }
+        }
+
+        public static IEnumerable<string[]> ParseCsvFile(string path)
+        {
+            var t = new List<string[]>();
+
+            using (var sr = new StreamReader(path))
+            {
+                do
+                {
+                    var stringT = sr.ReadLine().Split(';');
+                    t.Add(new[]
+                    {
+                        stringT[0],
+                        stringT[1],
+                        stringT[2],
+                        stringT[3],
+                        stringT[4],
+                        stringT[5],
+                        stringT[6],
+                        stringT[7],
+                        stringT[8]
+                    });
+                } while (!sr.EndOfStream);
+            }
+
+            return t;
         }
     }
 }

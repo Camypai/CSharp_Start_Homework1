@@ -1,6 +1,6 @@
 ﻿namespace Homework8.Models
 {
-    internal class Note : BaseModel
+    internal class NoteModel : BaseModel
     {
         public string Description { get; set; }
     }

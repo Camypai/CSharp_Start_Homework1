@@ -3,6 +3,6 @@
     public class DbContext
     {
         internal JsonRepository<BirthdayModel> BirthdayRepository;
-        internal JsonRepository<Note> NoteRepository;
+        internal JsonRepository<NoteModel> NoteRepository;
     }
 }

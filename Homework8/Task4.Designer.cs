@@ -36,35 +36,26 @@
             this.tsmiCreateBD = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiCreateNotes = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiOpenBD = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiOpenNotes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveBD = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveNotes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.правкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.отменадействияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.отменадействияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.вырезатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.копироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вставкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.выделитьвсеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сервисToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.параметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.содержаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.индексToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.поискToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tcBirthday = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsbCreateBD = new System.Windows.Forms.ToolStripButton();
+            this.tsbOpenBD = new System.Windows.Forms.ToolStripButton();
+            this.tsbSaveBD = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.dgvBirthday = new System.Windows.Forms.DataGridView();
             this.bnBirthday = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bnAddBD = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -76,29 +67,46 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.дниРожденияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.заметкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.tsbCreateNotes = new System.Windows.Forms.ToolStripButton();
+            this.tsbOpenNotes = new System.Windows.Forms.ToolStripButton();
+            this.tsbSaveNotes = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.dgvNotes = new System.Windows.Forms.DataGridView();
+            this.bnNotes = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bnAddNotes = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem1 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.tcBirthday.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBirthday)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnBirthday)).BeginInit();
             this.bnBirthday.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNotes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bnNotes)).BeginInit();
+            this.bnNotes.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.правкаToolStripMenuItem,
-            this.сервисToolStripMenuItem,
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(732, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -109,9 +117,7 @@
             this.tsmiOpen,
             this.toolStripSeparator,
             this.tsmiSave,
-            this.tsmiSaveAs,
             this.toolStripSeparator1,
-            this.toolStripSeparator2,
             this.tsmiExit});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
@@ -134,27 +140,42 @@
             // tsmiCreateBD
             // 
             this.tsmiCreateBD.Name = "tsmiCreateBD";
-            this.tsmiCreateBD.Size = new System.Drawing.Size(154, 22);
+            this.tsmiCreateBD.Size = new System.Drawing.Size(180, 22);
             this.tsmiCreateBD.Text = "Дни рождения";
             this.tsmiCreateBD.Click += new System.EventHandler(this.tsmiCreateBD_Click);
             // 
             // tsmiCreateNotes
             // 
             this.tsmiCreateNotes.Name = "tsmiCreateNotes";
-            this.tsmiCreateNotes.Size = new System.Drawing.Size(154, 22);
+            this.tsmiCreateNotes.Size = new System.Drawing.Size(180, 22);
             this.tsmiCreateNotes.Text = "Заметки";
+            this.tsmiCreateNotes.Click += new System.EventHandler(this.tsmiCreateNotes_Click);
             // 
             // tsmiOpen
             // 
             this.tsmiOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.дниРожденияToolStripMenuItem,
-            this.заметкиToolStripMenuItem});
+            this.tsmiOpenBD,
+            this.tsmiOpenNotes});
             this.tsmiOpen.Image = ((System.Drawing.Image)(resources.GetObject("tsmiOpen.Image")));
             this.tsmiOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsmiOpen.Name = "tsmiOpen";
             this.tsmiOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.tsmiOpen.Size = new System.Drawing.Size(180, 22);
             this.tsmiOpen.Text = "&Открыть";
+            // 
+            // tsmiOpenBD
+            // 
+            this.tsmiOpenBD.Name = "tsmiOpenBD";
+            this.tsmiOpenBD.Size = new System.Drawing.Size(180, 22);
+            this.tsmiOpenBD.Text = "Дни рождения";
+            this.tsmiOpenBD.Click += new System.EventHandler(this.tsmiOpenBD_Click);
+            // 
+            // tsmiOpenNotes
+            // 
+            this.tsmiOpenNotes.Name = "tsmiOpenNotes";
+            this.tsmiOpenNotes.Size = new System.Drawing.Size(180, 22);
+            this.tsmiOpenNotes.Text = "Заметки";
+            this.tsmiOpenNotes.Click += new System.EventHandler(this.tsmiOpenNotes_Click);
             // 
             // toolStripSeparator
             // 
@@ -163,169 +184,56 @@
             // 
             // tsmiSave
             // 
+            this.tsmiSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSaveBD,
+            this.tsmiSaveNotes});
             this.tsmiSave.Image = ((System.Drawing.Image)(resources.GetObject("tsmiSave.Image")));
             this.tsmiSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsmiSave.Name = "tsmiSave";
             this.tsmiSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.tsmiSave.Size = new System.Drawing.Size(180, 22);
             this.tsmiSave.Text = "&Сохранить";
-            this.tsmiSave.Click += new System.EventHandler(this.tsmiSave_Click);
             // 
-            // tsmiSaveAs
+            // tsmiSaveBD
             // 
-            this.tsmiSaveAs.Name = "tsmiSaveAs";
-            this.tsmiSaveAs.Size = new System.Drawing.Size(180, 22);
-            this.tsmiSaveAs.Text = "Сохранить &как";
+            this.tsmiSaveBD.Name = "tsmiSaveBD";
+            this.tsmiSaveBD.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSaveBD.Text = "Дни рождения";
+            this.tsmiSaveBD.Click += new System.EventHandler(this.tsmiSaveBD_Click);
+            // 
+            // tsmiSaveNotes
+            // 
+            this.tsmiSaveNotes.Name = "tsmiSaveNotes";
+            this.tsmiSaveNotes.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSaveNotes.Text = "Заметки";
+            this.tsmiSaveNotes.Click += new System.EventHandler(this.tsmiSaveNotes_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
-            // 
             // tsmiExit
             // 
             this.tsmiExit.Name = "tsmiExit";
             this.tsmiExit.Size = new System.Drawing.Size(180, 22);
             this.tsmiExit.Text = "Вы&ход";
-            // 
-            // правкаToolStripMenuItem
-            // 
-            this.правкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.отменадействияToolStripMenuItem,
-            this.отменадействияToolStripMenuItem1,
-            this.toolStripSeparator3,
-            this.вырезатьToolStripMenuItem,
-            this.копироватьToolStripMenuItem,
-            this.вставкаToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.выделитьвсеToolStripMenuItem});
-            this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
-            this.правкаToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.правкаToolStripMenuItem.Text = "&Правка";
-            // 
-            // отменадействияToolStripMenuItem
-            // 
-            this.отменадействияToolStripMenuItem.Name = "отменадействияToolStripMenuItem";
-            this.отменадействияToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.отменадействияToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.отменадействияToolStripMenuItem.Text = "&Отмена действия";
-            // 
-            // отменадействияToolStripMenuItem1
-            // 
-            this.отменадействияToolStripMenuItem1.Name = "отменадействияToolStripMenuItem1";
-            this.отменадействияToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.отменадействияToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
-            this.отменадействияToolStripMenuItem1.Text = "&Отмена действия";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(206, 6);
-            // 
-            // вырезатьToolStripMenuItem
-            // 
-            this.вырезатьToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("вырезатьToolStripMenuItem.Image")));
-            this.вырезатьToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.вырезатьToolStripMenuItem.Name = "вырезатьToolStripMenuItem";
-            this.вырезатьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.вырезатьToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.вырезатьToolStripMenuItem.Text = "Вырезат&ь";
-            // 
-            // копироватьToolStripMenuItem
-            // 
-            this.копироватьToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("копироватьToolStripMenuItem.Image")));
-            this.копироватьToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.копироватьToolStripMenuItem.Name = "копироватьToolStripMenuItem";
-            this.копироватьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.копироватьToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.копироватьToolStripMenuItem.Text = "&Копировать";
-            // 
-            // вставкаToolStripMenuItem
-            // 
-            this.вставкаToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("вставкаToolStripMenuItem.Image")));
-            this.вставкаToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.вставкаToolStripMenuItem.Name = "вставкаToolStripMenuItem";
-            this.вставкаToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.вставкаToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.вставкаToolStripMenuItem.Text = "Вст&авка";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(206, 6);
-            // 
-            // выделитьвсеToolStripMenuItem
-            // 
-            this.выделитьвсеToolStripMenuItem.Name = "выделитьвсеToolStripMenuItem";
-            this.выделитьвсеToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.выделитьвсеToolStripMenuItem.Text = "Выделить &все";
-            // 
-            // сервисToolStripMenuItem
-            // 
-            this.сервисToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.настройкиToolStripMenuItem,
-            this.параметрыToolStripMenuItem});
-            this.сервисToolStripMenuItem.Name = "сервисToolStripMenuItem";
-            this.сервисToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.сервисToolStripMenuItem.Text = "&Сервис";
-            // 
-            // настройкиToolStripMenuItem
-            // 
-            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.настройкиToolStripMenuItem.Text = "&Настройки";
-            // 
-            // параметрыToolStripMenuItem
-            // 
-            this.параметрыToolStripMenuItem.Name = "параметрыToolStripMenuItem";
-            this.параметрыToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.параметрыToolStripMenuItem.Text = "&Параметры";
+            this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.содержаниеToolStripMenuItem,
-            this.индексToolStripMenuItem,
-            this.поискToolStripMenuItem,
-            this.toolStripSeparator5,
             this.tsmiAbout});
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.справкаToolStripMenuItem.Text = "Спра&вка";
             // 
-            // содержаниеToolStripMenuItem
-            // 
-            this.содержаниеToolStripMenuItem.Name = "содержаниеToolStripMenuItem";
-            this.содержаниеToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.содержаниеToolStripMenuItem.Text = "&Содержание";
-            // 
-            // индексToolStripMenuItem
-            // 
-            this.индексToolStripMenuItem.Name = "индексToolStripMenuItem";
-            this.индексToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.индексToolStripMenuItem.Text = "&Индекс";
-            // 
-            // поискToolStripMenuItem
-            // 
-            this.поискToolStripMenuItem.Name = "поискToolStripMenuItem";
-            this.поискToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.поискToolStripMenuItem.Text = "&Поиск";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(155, 6);
-            // 
             // tsmiAbout
             // 
             this.tsmiAbout.Name = "tsmiAbout";
-            this.tsmiAbout.Size = new System.Drawing.Size(158, 22);
+            this.tsmiAbout.Size = new System.Drawing.Size(180, 22);
             this.tsmiAbout.Text = "&О программе...";
+            this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
             // 
             // tcBirthday
             // 
@@ -335,20 +243,70 @@
             this.tcBirthday.Location = new System.Drawing.Point(0, 24);
             this.tcBirthday.Name = "tcBirthday";
             this.tcBirthday.SelectedIndex = 0;
-            this.tcBirthday.Size = new System.Drawing.Size(800, 426);
+            this.tcBirthday.Size = new System.Drawing.Size(732, 394);
             this.tcBirthday.TabIndex = 1;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Controls.Add(this.dgvBirthday);
             this.tabPage1.Controls.Add(this.bnBirthday);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 400);
+            this.tabPage1.Size = new System.Drawing.Size(724, 368);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Дни рождения";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbCreateBD,
+            this.tsbOpenBD,
+            this.tsbSaveBD,
+            this.toolStripSeparator6});
+            this.toolStrip1.Location = new System.Drawing.Point(267, 3);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(87, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tsbCreateBD
+            // 
+            this.tsbCreateBD.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCreateBD.Image = ((System.Drawing.Image)(resources.GetObject("tsbCreateBD.Image")));
+            this.tsbCreateBD.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCreateBD.Name = "tsbCreateBD";
+            this.tsbCreateBD.Size = new System.Drawing.Size(23, 22);
+            this.tsbCreateBD.Text = "&Создать";
+            this.tsbCreateBD.Click += new System.EventHandler(this.tsmiCreateBD_Click);
+            // 
+            // tsbOpenBD
+            // 
+            this.tsbOpenBD.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbOpenBD.Image = ((System.Drawing.Image)(resources.GetObject("tsbOpenBD.Image")));
+            this.tsbOpenBD.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbOpenBD.Name = "tsbOpenBD";
+            this.tsbOpenBD.Size = new System.Drawing.Size(23, 22);
+            this.tsbOpenBD.Text = "&Открыть";
+            this.tsbOpenBD.Click += new System.EventHandler(this.tsmiOpenBD_Click);
+            // 
+            // tsbSaveBD
+            // 
+            this.tsbSaveBD.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbSaveBD.Image = ((System.Drawing.Image)(resources.GetObject("tsbSaveBD.Image")));
+            this.tsbSaveBD.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSaveBD.Name = "tsbSaveBD";
+            this.tsbSaveBD.Size = new System.Drawing.Size(23, 22);
+            this.tsbSaveBD.Text = "&Сохранить";
+            this.tsbSaveBD.Click += new System.EventHandler(this.tsmiSaveBD_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
             // 
             // dgvBirthday
             // 
@@ -356,12 +314,12 @@
             this.dgvBirthday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBirthday.Location = new System.Drawing.Point(3, 28);
             this.dgvBirthday.Name = "dgvBirthday";
-            this.dgvBirthday.Size = new System.Drawing.Size(786, 369);
+            this.dgvBirthday.Size = new System.Drawing.Size(718, 337);
             this.dgvBirthday.TabIndex = 1;
             // 
             // bnBirthday
             // 
-            this.bnBirthday.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bnBirthday.AddNewItem = this.bnAddBD;
             this.bnBirthday.CountItem = this.bindingNavigatorCountItem;
             this.bnBirthday.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bnBirthday.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -374,7 +332,7 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
+            this.bnAddBD,
             this.bindingNavigatorDeleteItem});
             this.bnBirthday.Location = new System.Drawing.Point(3, 3);
             this.bnBirthday.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -383,19 +341,19 @@
             this.bnBirthday.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bnBirthday.Name = "bnBirthday";
             this.bnBirthday.PositionItem = this.bindingNavigatorPositionItem;
-            this.bnBirthday.Size = new System.Drawing.Size(786, 25);
+            this.bnBirthday.Size = new System.Drawing.Size(718, 25);
             this.bnBirthday.TabIndex = 0;
             this.bnBirthday.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorAddNewItem
+            // bnAddBD
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            this.bnAddBD.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bnAddBD.Image = ((System.Drawing.Image)(resources.GetObject("bnAddBD.Image")));
+            this.bnAddBD.Name = "bnAddBD";
+            this.bnAddBD.RightToLeftAutoMirrorImage = true;
+            this.bnAddBD.Size = new System.Drawing.Size(23, 22);
+            this.bnAddBD.Text = "Добавить";
+            this.bnAddBD.Click += new System.EventHandler(this.bnAddBD_Click);
             // 
             // bindingNavigatorCountItem
             // 
@@ -475,65 +433,219 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.toolStrip2);
+            this.tabPage2.Controls.Add(this.dgvNotes);
+            this.tabPage2.Controls.Add(this.bnNotes);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 400);
+            this.tabPage2.Size = new System.Drawing.Size(724, 368);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Заметки";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // statusStrip1
+            // toolStrip2
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
+            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbCreateNotes,
+            this.tsbOpenNotes,
+            this.tsbSaveNotes,
+            this.toolStripSeparator7});
+            this.toolStrip2.Location = new System.Drawing.Point(266, 3);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(87, 25);
+            this.toolStrip2.TabIndex = 2;
+            this.toolStrip2.Text = "toolStrip2";
             // 
-            // toolStripStatusLabel1
+            // tsbCreateNotes
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(56, 17);
-            this.toolStripStatusLabel1.Text = "tsslStatus";
+            this.tsbCreateNotes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCreateNotes.Image = ((System.Drawing.Image)(resources.GetObject("tsbCreateNotes.Image")));
+            this.tsbCreateNotes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCreateNotes.Name = "tsbCreateNotes";
+            this.tsbCreateNotes.Size = new System.Drawing.Size(23, 22);
+            this.tsbCreateNotes.Text = "&Создать";
+            this.tsbCreateNotes.Click += new System.EventHandler(this.tsmiCreateNotes_Click);
             // 
-            // дниРожденияToolStripMenuItem
+            // tsbOpenNotes
             // 
-            this.дниРожденияToolStripMenuItem.Name = "дниРожденияToolStripMenuItem";
-            this.дниРожденияToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.дниРожденияToolStripMenuItem.Text = "Дни рождения";
-            this.дниРожденияToolStripMenuItem.Click += new System.EventHandler(this.дниРожденияToolStripMenuItem_Click);
+            this.tsbOpenNotes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbOpenNotes.Image = ((System.Drawing.Image)(resources.GetObject("tsbOpenNotes.Image")));
+            this.tsbOpenNotes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbOpenNotes.Name = "tsbOpenNotes";
+            this.tsbOpenNotes.Size = new System.Drawing.Size(23, 22);
+            this.tsbOpenNotes.Text = "&Открыть";
+            this.tsbOpenNotes.Click += new System.EventHandler(this.tsmiOpenNotes_Click);
             // 
-            // заметкиToolStripMenuItem
+            // tsbSaveNotes
             // 
-            this.заметкиToolStripMenuItem.Name = "заметкиToolStripMenuItem";
-            this.заметкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.заметкиToolStripMenuItem.Text = "Заметки";
+            this.tsbSaveNotes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbSaveNotes.Image = ((System.Drawing.Image)(resources.GetObject("tsbSaveNotes.Image")));
+            this.tsbSaveNotes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSaveNotes.Name = "tsbSaveNotes";
+            this.tsbSaveNotes.Size = new System.Drawing.Size(23, 22);
+            this.tsbSaveNotes.Text = "&Сохранить";
+            this.tsbSaveNotes.Click += new System.EventHandler(this.tsmiSaveNotes_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            // 
+            // dgvNotes
+            // 
+            this.dgvNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNotes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvNotes.Location = new System.Drawing.Point(3, 28);
+            this.dgvNotes.Name = "dgvNotes";
+            this.dgvNotes.Size = new System.Drawing.Size(718, 337);
+            this.dgvNotes.TabIndex = 1;
+            // 
+            // bnNotes
+            // 
+            this.bnNotes.AddNewItem = this.bnAddNotes;
+            this.bnNotes.CountItem = this.bindingNavigatorCountItem1;
+            this.bnNotes.DeleteItem = this.bindingNavigatorDeleteItem1;
+            this.bnNotes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem1,
+            this.bindingNavigatorMovePreviousItem1,
+            this.bindingNavigatorSeparator3,
+            this.bindingNavigatorPositionItem1,
+            this.bindingNavigatorCountItem1,
+            this.bindingNavigatorSeparator4,
+            this.bindingNavigatorMoveNextItem1,
+            this.bindingNavigatorMoveLastItem1,
+            this.bindingNavigatorSeparator5,
+            this.bnAddNotes,
+            this.bindingNavigatorDeleteItem1});
+            this.bnNotes.Location = new System.Drawing.Point(3, 3);
+            this.bnNotes.MoveFirstItem = this.bindingNavigatorMoveFirstItem1;
+            this.bnNotes.MoveLastItem = this.bindingNavigatorMoveLastItem1;
+            this.bnNotes.MoveNextItem = this.bindingNavigatorMoveNextItem1;
+            this.bnNotes.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
+            this.bnNotes.Name = "bnNotes";
+            this.bnNotes.PositionItem = this.bindingNavigatorPositionItem1;
+            this.bnNotes.Size = new System.Drawing.Size(718, 25);
+            this.bnNotes.TabIndex = 0;
+            this.bnNotes.Text = "bindingNavigator1";
+            // 
+            // bnAddNotes
+            // 
+            this.bnAddNotes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bnAddNotes.Image = ((System.Drawing.Image)(resources.GetObject("bnAddNotes.Image")));
+            this.bnAddNotes.Name = "bnAddNotes";
+            this.bnAddNotes.RightToLeftAutoMirrorImage = true;
+            this.bnAddNotes.Size = new System.Drawing.Size(23, 22);
+            this.bnAddNotes.Text = "Добавить";
+            this.bnAddNotes.Click += new System.EventHandler(this.bnAddNotes_Click);
+            // 
+            // bindingNavigatorCountItem1
+            // 
+            this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem1.Text = "для {0}";
+            this.bindingNavigatorCountItem1.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem1
+            // 
+            this.bindingNavigatorDeleteItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem1.Image")));
+            this.bindingNavigatorDeleteItem1.Name = "bindingNavigatorDeleteItem1";
+            this.bindingNavigatorDeleteItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem1.Text = "Удалить";
+            // 
+            // bindingNavigatorMoveFirstItem1
+            // 
+            this.bindingNavigatorMoveFirstItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
+            this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem1";
+            this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem1.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem1
+            // 
+            this.bindingNavigatorMovePreviousItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
+            this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
+            this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem1.Text = "Переместить назад";
+            // 
+            // bindingNavigatorSeparator3
+            // 
+            this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem1
+            // 
+            this.bindingNavigatorPositionItem1.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem1.AutoSize = false;
+            this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem1";
+            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem1.Text = "0";
+            this.bindingNavigatorPositionItem1.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator4
+            // 
+            this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem1
+            // 
+            this.bindingNavigatorMoveNextItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
+            this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
+            this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem1.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem1
+            // 
+            this.bindingNavigatorMoveLastItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
+            this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
+            this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem1.Text = "Переместить в конец";
+            // 
+            // bindingNavigatorSeparator5
+            // 
+            this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
+            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 25);
             // 
             // Task4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.statusStrip1);
+            this.ClientSize = new System.Drawing.Size(732, 418);
             this.Controls.Add(this.tcBirthday);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Task4";
             this.Text = "Task4";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Task4_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tcBirthday.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBirthday)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnBirthday)).EndInit();
             this.bnBirthday.ResumeLayout(false);
             this.bnBirthday.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNotes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bnNotes)).EndInit();
+            this.bnNotes.ResumeLayout(false);
+            this.bnNotes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -547,36 +659,16 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiOpen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem tsmiSave;
-        private System.Windows.Forms.ToolStripMenuItem tsmiSaveAs;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem tsmiExit;
-        private System.Windows.Forms.ToolStripMenuItem правкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem отменадействияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem отменадействияToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem вырезатьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem копироватьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вставкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem выделитьвсеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сервисToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem параметрыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem содержаниеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem индексToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem поискToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem tsmiAbout;
         private System.Windows.Forms.TabControl tcBirthday;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.DataGridView dgvBirthday;
         private System.Windows.Forms.BindingNavigator bnBirthday;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripButton bnAddBD;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -589,7 +681,32 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripMenuItem tsmiCreateBD;
         private System.Windows.Forms.ToolStripMenuItem tsmiCreateNotes;
-        private System.Windows.Forms.ToolStripMenuItem дниРожденияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem заметкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiOpenBD;
+        private System.Windows.Forms.ToolStripMenuItem tsmiOpenNotes;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton tsbCreateBD;
+        private System.Windows.Forms.ToolStripButton tsbOpenBD;
+        private System.Windows.Forms.ToolStripButton tsbSaveBD;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSaveBD;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSaveNotes;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton tsbCreateNotes;
+        private System.Windows.Forms.ToolStripButton tsbOpenNotes;
+        private System.Windows.Forms.ToolStripButton tsbSaveNotes;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.DataGridView dgvNotes;
+        private System.Windows.Forms.BindingNavigator bnNotes;
+        private System.Windows.Forms.ToolStripButton bnAddNotes;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator3;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator4;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator5;
     }
 }
